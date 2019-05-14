@@ -8,9 +8,9 @@ This repository will tell you how Navicat offline activation works.
 
 ## How to use?
 
-> For easier offline activation, we are going to install Navicat to `home`; you can download [Screen recoding](image/Screen_recording.mp4) for references.
+> You can download [Screen recoding](image/Screen_recording.mp4) for references.
 
-1. Run Navicat, for initialization:
+1. Switch to the path you extracted the installation package ，Run Navicat, for initialization:
 
     ```bash
     cd ~/navicat121_premium_en_x64 && \
@@ -29,6 +29,8 @@ This repository will tell you how Navicat offline activation works.
 
 2. Download the latest release [from here](https://github.com/DoubleLabyrinth/navicat-keygen/releases), and extract ：
 
+    > The 64-bit executable file is downloaded here. If you use 32-bit, please download the corresponding version.
+
     ```bash
     curl -O -L https://github.com/DoubleLabyrinth/navicat-keygen/releases/download/v3.1/navicat-keygen-for-x64.zip && \
     unzip navicat-keygen-for-x64.zip
@@ -37,18 +39,20 @@ This repository will tell you how Navicat offline activation works.
 3. Download `navicat-pacther.sh` and `navicat-keygen.sh`:
 
     ```bash
-    curl -O -L https://raw.githubusercontent.com/zenuo/navicat-keygen/linux/bash/navicat-patcher.sh && \
+    curl -O -L https://raw.githubusercontent.com/DoubleLabyrinth/navicat-keygen/linux/bash/navicat-patcher.sh && \
     chmod +x navicat-patcher.sh && \
-    curl -O -L https://raw.githubusercontent.com/zenuo/navicat-keygen/linux/bash/navicat-keygen.sh && \
+    curl -O -L https://raw.githubusercontent.com/DoubleLabyrinth/navicat-keygen/linux/bash/navicat-keygen.sh && \
     chmod +x navicat-keygen.sh
     ```
 
 4. Use `navicat-patcher.exe` to replace __Navicat Activation Public Key__ that is stored in `navicat.exe` or `libcc.dll`.
-   
+
+   > Please turn off `Navicat` when performing this step.
+
    ```bash
    ./navicat-patcher.sh
    ```
-   
+
    It has been tested on __Navicat Premium 12.1.12 Simplified Chinese version__. The following is an example of output.
 
    ```
